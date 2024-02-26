@@ -22,17 +22,17 @@ function getLocalOrPrivateIpInfo($ip)
 {
     // ::1/128 is the only localhost ipv6 address. there are no others, no need to strpos this
     if ('::1' === $ip) {
-        return 'localhost IPv6 access';
+        return 'acesso IPv6 local';
     }
 
     // simplified IPv6 link-local address (should match fe80::/10)
     if (stripos($ip, 'fe80:') === 0) {
-        return 'link-local IPv6 access';
+        return 'acesso IPv6 local';
     }
 
     // anything within the 127/8 range is localhost ipv4, the ip must start with 127.0
     if (strpos($ip, '127.') === 0) {
-        return 'localhost IPv4 access';
+        return 'acesso IPv4 local';
     }
 
     // 10/8 private IPv4
@@ -52,7 +52,7 @@ function getLocalOrPrivateIpInfo($ip)
 
     // IPv4 link-local
     if (strpos($ip, '169.254.') === 0) {
-        return 'link-local IPv4 access';
+        return 'acesso IPv4 local';
     }
 
     return null;

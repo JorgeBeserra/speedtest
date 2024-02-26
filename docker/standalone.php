@@ -169,10 +169,10 @@ function initUI(){
 		color:#FFFFFF;
 	}
 	#startStopBtn:before{
-		content:"Start";
+		content:"Vamos Lá";
 	}
 	#startStopBtn.running:before{
-		content:"Abort";
+		content:"Chega";
 	}
 	#test{
 		margin-top:2em;
@@ -283,7 +283,7 @@ function initUI(){
 <div id="testWrapper">
 	<div id="startStopBtn" onclick="startStop()"></div><br/>
 	<?php if(getenv("TELEMETRY")=="true"){ ?>
-        <a class="privacy" href="#" onclick="I('privacyPolicy').style.display=''">Privacy</a>
+        <a class="privacy" href="#" onclick="I('privacyPolicy').style.display=''">Privacidade</a>
 	<?php } ?>
 	<div id="test">
 		<div class="testGroup">

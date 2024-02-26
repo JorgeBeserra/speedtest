@@ -10,7 +10,7 @@
 	},
 	{
 		"name": "Example server 2 (HTTPS only)",
-		"server" :"https://example2.mydomain.com/",
+		"server" :"https://192.168.10.150:82/",
 		"dlURL" :"garbage.php",
 		"ulURL" :"empty.php",
 		"pingURL" :"empty.php",
