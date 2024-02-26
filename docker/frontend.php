@@ -238,10 +238,10 @@ function initUI(){
 		color:#FFFFFF;
 	}
 	#startStopBtn:before{
-		content:"Start";
+		content:"Iniciar";
 	}
 	#startStopBtn.running:before{
-		content:"Abort";
+		content:"Parar";
 	}
 	#serverArea{
 		margin-top:1em;
@@ -391,7 +391,7 @@ function initUI(){
         <a class="privacy" href="#" onclick="I('privacyPolicy').style.display=''">Privacy</a>
 	<?php } ?>
 	<div id="serverArea">
-		Server: <select id="server" onchange="s.setSelectedServer(SPEEDTEST_SERVERS[this.value])"></select>
+		Servidor: <select id="server" onchange="s.setSelectedServer(SPEEDTEST_SERVERS[this.value])"></select>
 	</div>
 	<div id="test">
 		<div class="testGroup">
@@ -424,13 +424,12 @@ function initUI(){
 			<span id="ip"></span>
 		</div>
 		<div id="shareArea" style="display:none">
-			<h3>Share results</h3>
-			<p>Test ID: <span id="testId"></span></p>
+			<h3>Enviar resultados</h3>
+			<p>Registro do Teste: <span id="testId"></span></p>
 			<input type="text" value="" id="resultsURL" readonly="readonly" onclick="this.select();this.focus();this.select();document.execCommand('copy');alert('Link copied')"/>
 			<img src="" id="resultsImg" />
 		</div>
 	</div>
-	<a href="https://github.com/librespeed/speedtest">Source code</a>
 </div>
 <div id="privacyPolicy" style="display:none">
     <h2>Privacy Policy</h2>

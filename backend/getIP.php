@@ -37,17 +37,17 @@ function getLocalOrPrivateIpInfo($ip)
 
     // 10/8 private IPv4
     if (strpos($ip, '10.') === 0) {
-        return 'private IPv4 access';
+        return 'acesso IPv4 privado';
     }
 
     // 172.16/12 private IPv4
     if (preg_match('/^172\.(1[6-9]|2\d|3[01])\./', $ip) === 1) {
-        return 'private IPv4 access';
+        return 'acesso IPv4 privado';
     }
 
     // 192.168/16 private IPv4
     if (strpos($ip, '192.168.') === 0) {
-        return 'private IPv4 access';
+        return 'acesso IPv4 privado';
     }
 
     // IPv4 link-local
