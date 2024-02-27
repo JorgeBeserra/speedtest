@@ -2,7 +2,7 @@
 [
 	{
 		"name": "Example server 1 (HTTP and HTTPS)",
-		"server" :"//example1.mydomain.com/",
+		"server" :"//192.168.10.150:82/",
 		"dlURL" :"garbage.php",
 		"ulURL" :"empty.php",
 		"pingURL" :"empty.php",
